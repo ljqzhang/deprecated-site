@@ -1,0 +1,185 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LABOR TABLE */
+@media only screen and (max-width: 640px)  {
+#labor table, #labor td, #labor tbody, #labor td{
+    display: block;
+    width:100% !important;
+    height:100px;
+    clear:both;
+    vertical-align: center;
+}
+#labor td {
+    margin-bottom:15px;
+    padding:10%;
+}   
+}
+#labor {
+    color:#fff;
+    font-family: 'Karla', sans-serif;
+    font-size: 175%;
+    line-height:140%;
+    font-weight:800;
+    vertical-align:center;
+}
+#labor a{
+    color:#fff;
+    font-family: 'Karla', sans-serif;
+    font-size: 100%;
+    line-height:140%;
+    font-weight:800;
+}
+#labor td{
+    border:none;
+    height:250px;
+    width:30%;
+    border-spacing:5%;
+    padding:5%;
+}
+#labor td.deepchestnut {
+  background:#c16e69;
+}
+#labor td.meatbrown {
+  background:#e5c169;
+}
+#labor td.jet {
+  background:#2f5e7c;
+}
+#labor td.bayareatravelguide{
+  background:#c16e69;
+}
+#labor td.bayareatravelguide:hover{
+    background-image:url("https://i.imgur.com/6Nlhvrw.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode: exclusion;
+}
+#labor td.catnip{
+  background:#e5c169;
+}
+#labor td.catnip:hover{
+    background-image:url('https://i.imgur.com/d9rt4yH.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode: exclusion;
+}
+#labor td.kinbaku {
+    background:#2f5e7c;
+}
+#labor td.kinbaku:hover {
+    background-image:url('https://i.imgur.com/C3z5wd5.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}
+#labor td.experientialretail {
+    background:#2f5e7c;
+}
+#labor td.experientialretail:hover {
+    background-image:url('https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/cache=expiry:max/rotate=deg:exif/resize=width:2400,fit:crop/output=format:jpg,quality:70/compress/dnOnXLz3QJMU64UlYWQg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}
+#labor td.tabi {
+    background:#c16e69;
+}
+#labor td.tabi:hover {
+    background-image:url('https://160dff42c3488015311d-78faca853cf0da794384b877826c58f1.ssl.cf5.rackcdn.com/uploads/images/0000/0081/1016/zoom_Look_12_149679W_0175.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}
+#labor td.popeye {
+    background:#e5c169;
+}
+#labor td.popeye:hover {
+    background-image:url('http://yeinjee.com/wp-content/uploads/2014/04/popeye-magazine-japan-1.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}
+#labor td.cloutgoggles {
+    background:#e5c169;
+}
+#labor td.cloutgoggles:hover {
+    background-image:url('https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/cache=expiry:max/rotate=deg:exif/rotate=deg:0/resize=width:2400,height:1600,fit:crop/output=format:jpg,quality:70/compress/Y6Z1u8IRSIqeJbGP0A0m');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}
+#labor td.backpack {
+  background:#2f5e7c;
+}
+#labor td.backpack:hover {
+    background-image:url('https://i.imgur.com/641VsSz.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}
+#labor td.motocross {
+    background:#c16e69;
+}
+#labor td.motocross:hover {
+    background-image:url('https://format-com-cld-res.cloudinary.com/image/private/s--obd8mq-k--/c_limit,g_center,h_2005,w_1336/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/0ed727b2893d4c19408068a82204bbbc/Alyx.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}
+#labor td.sketches {
+    background:#c16e69;
+}
+#labor td.sketches:hover {
+    background-image:url('https://i.imgur.com/K9iIY5y.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:exclusion;
+}

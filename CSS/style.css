@@ -1,0 +1,368 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONT CSS */
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 70%;
+    line-height: 150%;
+    font-weight:400;
+    color:#000;
+    background-color: #fff;
+}
+h1{
+    font-family: 'Karla', sans-serif;
+    font-size: 250%;
+    line-height: 200%;
+    font-weight:800;
+    color:#000;
+    text-align: center;
+}
+h3{
+    font-size: 100%;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ul{
+    list-style-type: square;
+    padding-left:15px;
+}
+a, a:active, a:visited{
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+}
+a:hover.deepchestnut {
+    color:#b94e48;
+}
+a:hover.meatbrown{
+    color:#e5c169;
+}
+a:hover.jet{
+    color:#2f5e7c;
+}
+blockquote{
+    background:#f3f3f3;
+    padding:10px;
+    border-left:#59595d solid 10px;
+    margin: 5px 10px 5px 10px;
+    font-size:90%;
+    line-height:150%;
+}
+.attribution{
+    float: right;
+    text-transform:uppercase;
+    padding-bottom:5px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLBAR CSS */
+::-webkit-scrollbar-track{
+	background-color:none;
+}
+::-webkit-scrollbar{
+	width:10px;
+	background-color:none;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color:#000;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN BODY STRUCTURE CSS */
+@media only screen and (max-width: 640px)  {
+    
+table, td, tbody, tr{
+    display: block;
+    width:100%;
+    padding:0;
+    clear:both;
+}
+td {
+    position: relative !important;
+    margin-bottom:50px;
+}   
+}
+
+.bodycontainer{
+    width:100%;
+    padding-top:5%;
+}
+.topnav{
+    position:fixed;
+    width:96%;
+    z-index: 999;
+    font-size:1.4em;
+    font-family: 'Karla', sans-serif;
+    text-align:left;
+    font-weight:800;
+    padding: 1%; 
+}
+.body{
+    width:40%;
+    margin: 1% 30% 5% 30%;
+}
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+label { 
+    display: inline-block;
+    font-size:1em;
+    font-family: 'Karla', sans-serif;
+    text-align:left;
+    font-weight:800;
+    padding: 1%; 
+}
+.contact {
+    opacity:0;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    position:fixed;
+    background-color: #000;
+    color:#fff;
+    padding: 1.4em;
+    min-width:150px;
+    margin-top:1em;
+    margin-left:78%;
+    font-size:.7em;
+    font-weight:400;
+    font-family: 'Work Sans', sans-serif;
+    line-height:2em;
+}
+input[type=checkbox]:checked ~ .contact {
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+input[type=checkbox]:checked ~ .contact a {
+    color:#fff;
+    font-weight:400;
+}
+input[type=checkbox]:checked ~ .contact a:hover {
+    font-weight:600;
+}  
+.topnav li {
+    list-style-type: none;
+    float: right;
+}
+.topnav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: .7em;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#backarrow{
+    z-index:999;
+    position:fixed;
+    float:left;
+    padding-left:1%;
+    top:50%;
+    font-size:5em;
+}
+#shuffle{
+    z-index:998;
+    position:fixed;
+    width:96%;
+    text-align:right;
+    top:50%;
+    font-size:3.5em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLING IMAGE FILL CSS */
+.mainimgscroll{
+    display:inline-block;
+    width:100%;
+    height:440px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-align: center; 
+}
+.mainimgscroll img{
+    height:100%;
+    width:auto;
+}
+#zoom img{
+        height:100%;
+    object-fit:fill;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+    transition: ease-out 1s;
+}
+#zoom img:hover{
+  -webkit-transform: scale(1.125, 1.125); !important
+  transform: scale(1.125, 1.125); !important
+    transition: ease-out 1s; !important
+}
+#deepchestnut{
+    background-color: #c16e69;
+}
+#meatbrown{
+    background-color:#e5c169;
+}
+#jet{
+    background-color:#2f5e7c;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HANG */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UNDERLINE FROM LEFT */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #000;
+  height: 3px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BOX SHADOWS */
+.box {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  -webkit-transform: scale(1.125, 1.125);
+  transform: scale(1.125, 1.125);
+}
+
+.box:hover::after {
+    opacity: 1;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT ME IMG HOVERS */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Web Sans', sans-serif;
+    font-size:.85em;
+    line-height:1.5em;
+}
+.tooltip:hover .tooltiptext {
+    opacity:1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    top: 80%;
+    left: 32%;
+}
