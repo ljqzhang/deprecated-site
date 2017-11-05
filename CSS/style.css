@@ -52,6 +52,13 @@ blockquote{
     text-transform:uppercase;
     padding-bottom:5px;
 }
+.tag{
+    font:'Work Sans',sans-serif;
+    text-transform:uppercase;
+    color:#fff;
+    font-weight:400;
+    font-size:50%;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLBAR CSS */
 ::-webkit-scrollbar-track{
 	background-color:none;
