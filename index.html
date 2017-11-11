@@ -11,7 +11,7 @@
 
 <div class="topnav">
     <label class="hvr-underline-from-left"><a href="index.html">Leslie Zhang</a></label> &nbsp; &nbsp; &nbsp; <h4 style="display:inline">Writer & Designer</h4>
-            <input type="checkbox" id="toggle-1">
+                <input type="checkbox" id="toggle-1">
             <div class="contact">
                 ✉ &nbsp; ljqzhang@gmail.com<br>
                 ☎ &nbsp; 510.759.1092<br>
@@ -34,33 +34,41 @@
     
     
     <div class="bodycontainer">
-        <div class="Body">
-            <h1>Please tell me more about</h1>
-        </div>
+            <h1>Hello, my name is Leslie and I <div id="header" style="display:inline; border-bottom:3px solid #f2f2f2;">write</div>.</h1>
         
         
         <table id="labor" style="width: 80%; text-align: center; border-spacing:15px;" align="center">
 <tbody>
 <tr>
     <td class="rumble"><a href="rumble.html">Hope for the hungry,<br>hopeless college kid<br><h4>UI Design</h4></a></td>
-    <td class="catnip"><a href="catnip.html">Organizing your schedule<br>based on priority</a><br><h4>UI Design</h4></td>
-    <td class="kinbaku"><a href="kinbaku.html">Bondage-inspired<br>skate shoes</a><br><h4>Product Design</h4></td>
+    <td class="catnip"><a href="catnip.html">Organizing your schedule<br>based on priority<br><h4>UI Design</h4></a></td>
+    <td class="kinbaku"><a href="kinbaku.html">Bondage-inspired<br>skate shoes<br><h4>Product Design</h4></a></td>
 </tr>
     <tr>
-        <td class="experientialretail"><a href="https://www.grailed.com/drycleanonly/concept-experiential-retail" target="_blank">Stores bullied into<br>selling experiences,<br>not things</a><br><h4>Writing</h4></td>
-        <td class="tabi"><a href="https://www.heroine.com/the-editorial/margiela-tabi" target="_blank">The “camel toe”<br>of shoes</a><br><h4>Writing</h4></td>
-    <td class="popeye"><a href="https://www.grailed.com/drycleanonly/history-of-popeye-magazine" target="_blank">A men's magazine <br>founded on escapism</a><br><h4>Writing</h4></td>  
+        <td class="experientialretail"><a href="https://www.grailed.com/drycleanonly/concept-experiential-retail" target="_blank">Stores bullied into<br>selling experiences,<br>not things<br><h4>Writing</h4></a></td>
+        <td class="tabi"><a href="https://www.heroine.com/the-editorial/margiela-tabi" target="_blank">The “camel toe”<br>of shoes<br><h4>Writing</h4></a></td>
+    <td class="popeye"><a href="https://www.grailed.com/drycleanonly/history-of-popeye-magazine" target="_blank">A men's magazine <br>founded on escapism<br><h4>Writing</h4></a></td>  
 </tr>
 <tr>
-        <td class="cloutgoggles"><a href="https://www.grailed.com/drycleanonly/clout-goggles-history" target="_blank">Wearing a meme <br>on your face</a><br><h4>Writing</h4></td>
-    <td class="backpack"><a href="backpack.html">A backpack for both <br>camping and the city</a><br><h4>Product Design</h4></td>    
-    <td class="motocross"><a href="https://www.grailed.com/drycleanonly/motorcycle-racing-trend" target="_blank">Fashion's co-option of <br>motorcycle racing</a><br><h4>Writing</h4></td>
+        <td class="cloutgoggles"><a href="https://www.grailed.com/drycleanonly/clout-goggles-history" target="_blank">Wearing a meme <br>on your face<br><h4>Writing</h4></a></td>
+    <td class="backpack"><a href="backpack.html">A backpack for both <br>camping and the city<br><h4>Product Design</h4></a></td>    
+    <td class="motocross"><a href="https://www.grailed.com/drycleanonly/motorcycle-racing-trend" target="_blank">Fashion's co-option of <br>motorcycle racing<br><h4>Writing</h4></a></td>
 </tr>
-    <tr><td class="sketches"><a href="sketches.html">Sketches</a><br><h4>Illustration</h4></td>
+    <tr><td class="sketches"><a href="sketches.html">Sketches<br><h4>Illustration</h4></a></td>
     </tr>
 </tbody>
 </table>
 <br><br><br><br><br><br><br><br><br>
     </div>
+    <script>
+    var text = ['write', 'design', 'research', 'draw', 'am skeptical about tech', 'almost exclusively wear menswear', 'suffer from RBF', 'have crippling career anxiety', 'enjoy eating at restaurants alone', 'kill all my plants', 'am perpetually dehyrated', 'can sleep like a baby on public transit', 'dream of living in Tokyo', 'am a Pisces sun, Aries moon and Aquarius rising', 'am turning into my mom'];
+function callMe(){
+  var myText = document.getElementById('header');
+  var curIdx = text.indexOf(myText.innerHTML);
+  myText.innerHTML = text[(curIdx+1)%text.length];
+}
+
+setInterval(callMe,2500);
+    </script>
     </body>
     
