@@ -1,7 +1,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONT CSS */
 body{
     font-family: 'Work Sans', sans-serif;
-    font-size: 70%;
+    font-size: 1em;
     line-height: 150%;
     font-weight:400;
     color:#000;
@@ -9,14 +9,22 @@ body{
 }
 h1{
     font-family: 'Karla', sans-serif;
-    font-size: 250%;
+    font-size: 1.5em;
     line-height: 200%;
     font-weight:800;
     color:#000;
     text-align: center;
 }
 h3{
-    font-size: 100%;
+    font-size: 1em;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom:3px solid #f2f2f2;
+    padding-bottom:3px;
+}
+h4{
+    font-size:.75em;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -57,7 +65,7 @@ blockquote{
     text-transform:uppercase;
     color:#fff;
     font-weight:400;
-    font-size:50%;
+    font-size:.em;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLBAR CSS */
 ::-webkit-scrollbar-track{
@@ -90,12 +98,13 @@ td {
 .bodycontainer{
     width:100%;
     padding-top:5%;
+    font-size:.8em;
 }
 .topnav{
     position:fixed;
     width:96%;
     z-index: 999;
-    font-size:1.4em;
+    font-size:100%;
     font-family: 'Karla', sans-serif;
     text-align:left;
     font-weight:800;
@@ -179,33 +188,23 @@ input[type=checkbox]:checked ~ .contact a:hover {
     width:96%;
     text-align:right;
     top:50%;
-    font-size:3.5em;
+    font-size:225%;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLING IMAGE FILL CSS */
-.mainimgscroll{
-    display:inline-block;
+
+.mainimgscroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     width:100%;
     height:440px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-align: center; 
 }
-.mainimgscroll img{
-    height:100%;
-    width:auto;
-}
-#zoom img{
-        height:100%;
-    object-fit:fill;
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-    transition: ease-out 1s;
-}
-#zoom img:hover{
-  -webkit-transform: scale(1.125, 1.125); !important
-  transform: scale(1.125, 1.125); !important
-    transition: ease-out 1s; !important
+.mainimgscroll img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 #deepchestnut{
     background-color: #c16e69;
@@ -215,71 +214,6 @@ input[type=checkbox]:checked ~ .contact a:hover {
 }
 #jet{
     background-color:#2f5e7c;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HANG */
-@-webkit-keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-@keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-@-webkit-keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-@keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-.hvr-hang {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-}
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-  -webkit-animation-name: hvr-hang-sink, hvr-hang;
-  animation-name: hvr-hang-sink, hvr-hang;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UNDERLINE FROM LEFT */
