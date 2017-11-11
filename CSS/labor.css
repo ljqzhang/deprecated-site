@@ -1,4 +1,5 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LABOR TABLE */
+
 @media only screen and (max-width: 640px)  {
 #labor table, #labor td, #labor tbody, #labor td{
     display: block;
@@ -15,36 +16,29 @@
 #labor {
     color:#fff;
     font-family: 'Karla', sans-serif;
-    font-size: 175%;
+    font-size: 125%;
     line-height:140%;
     font-weight:800;
     vertical-align:center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.125);
 }
-#labor a{
+#labor td a{
     color:#fff;
 }
 #labor td{
     border:none;
-    height:250px;
+    height:325px;
     width:30%;
     border-spacing:5%;
-    padding:5%;
 }
-#labor td.deepchestnut {
+#labor td.rumble{
   background:#c16e69;
 }
-#labor td.meatbrown {
-  background:#e5c169;
+#labor td.rumble a{
+  display:block;
 }
-#labor td.jet {
-  background:#2f5e7c;
-}
-#labor td.bayareatravelguide{
-  background:#c16e69;
-}
-#labor td.bayareatravelguide:hover{
-    background-image:url("https://i.imgur.com/6Nlhvrw.jpg");
+#labor td.rumble:hover{
+    background-image:url("https://i.imgur.com/FCWB3Mx.jpg");
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -52,7 +46,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode: exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.catnip{
   background:#e5c169;
@@ -66,7 +60,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode: exclusion;
+    background-blend-mode: soft-light;
 }
 #labor td.kinbaku {
     background:#2f5e7c;
@@ -80,7 +74,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.experientialretail {
     background:#2f5e7c;
@@ -94,7 +88,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.tabi {
     background:#c16e69;
@@ -108,7 +102,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.popeye {
     background:#e5c169;
@@ -122,7 +116,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.cloutgoggles {
     background:#e5c169;
@@ -136,7 +130,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.backpack {
   background:#2f5e7c;
@@ -150,7 +144,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.motocross {
     background:#c16e69;
@@ -164,7 +158,7 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
 #labor td.sketches {
     background:#c16e69;
@@ -178,5 +172,5 @@
     -moz-transition: .5s ease-out;
     -webkit-transition: .5s ease-out;
     -o-transition: .5s ease-out;
-    background-blend-mode:exclusion;
+    background-blend-mode:soft-light;
 }
