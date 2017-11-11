@@ -31,11 +31,13 @@
     width:30%;
     border-spacing:5%;
 }
+#labor td.rumble a, #labor td.catnip a, #labor td.kinbaku a, #labor td.experientialretail a, #labor td.tabi a, #labor td.popeye a, #labor td.cloutgoggles a, #labor td.backpack a, #labor td.motocross a, #labor td.sketches a{
+  display:block;
+    width:100%;
+    height:auto;
+}
 #labor td.rumble{
   background:#c16e69;
-}
-#labor td.rumble a{
-  display:block;
 }
 #labor td.rumble:hover{
     background-image:url("https://i.imgur.com/FCWB3Mx.jpg");
