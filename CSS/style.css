@@ -182,14 +182,6 @@ input[type=checkbox]:checked ~ .contact a:hover {
     top:50%;
     font-size:5em;
 }
-#shuffle{
-    z-index:998;
-    position:fixed;
-    width:96%;
-    text-align:right;
-    top:50%;
-    font-size:225%;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLING IMAGE FILL CSS */
 
