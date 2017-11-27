@@ -40,7 +40,7 @@
   background:#c16e69;
 }
 #labor td.rumble:hover{
-    background-image:url("https://i.imgur.com/FCWB3Mx.jpg");
+    background-image:url("General_Images/Index_Rumble.jpg");
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@
   background:#e5c169;
 }
 #labor td.catnip:hover{
-    background-image:url('https://i.imgur.com/d9rt4yH.jpg');
+    background-image:url('General_Images/Index_Catnip.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@
     background:#2f5e7c;
 }
 #labor td.kinbaku:hover {
-    background-image:url('https://i.imgur.com/C3z5wd5.jpg');
+    background-image:url('General_Images/Index_Kinbaku.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
     background:#2f5e7c;
 }
 #labor td.experientialretail:hover {
-    background-image:url('https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/cache=expiry:max/rotate=deg:exif/resize=width:2400,fit:crop/output=format:jpg,quality:70/compress/dnOnXLz3QJMU64UlYWQg');
+    background-image:url('General_Images/Index_ExperientialRetail.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@
     background:#c16e69;
 }
 #labor td.tabi:hover {
-    background-image:url('https://160dff42c3488015311d-78faca853cf0da794384b877826c58f1.ssl.cf5.rackcdn.com/uploads/images/0000/0081/1016/zoom_Look_12_149679W_0175.jpg');
+    background-image:url('General_Images/Index_Tabi.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@
     background:#e5c169;
 }
 #labor td.popeye:hover {
-    background-image:url('http://yeinjee.com/wp-content/uploads/2014/04/popeye-magazine-japan-1.jpg');
+    background-image:url('General_Images/Index_Popeye.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@
     background:#e5c169;
 }
 #labor td.cloutgoggles:hover {
-    background-image:url('https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/cache=expiry:max/rotate=deg:exif/rotate=deg:0/resize=width:2400,height:1600,fit:crop/output=format:jpg,quality:70/compress/Y6Z1u8IRSIqeJbGP0A0m');
+    background-image:url('General_Images/Index_CloutGoggles.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -138,21 +138,7 @@
   background:#2f5e7c;
 }
 #labor td.backpack:hover {
-    background-image:url('https://i.imgur.com/641VsSz.jpg');
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    transition: .5s ease-out;
-    -moz-transition: .5s ease-out;
-    -webkit-transition: .5s ease-out;
-    -o-transition: .5s ease-out;
-    background-blend-mode:soft-light;
-}
-#labor td.motocross {
-    background:#c16e69;
-}
-#labor td.motocross:hover {
-    background-image:url('https://format-com-cld-res.cloudinary.com/image/private/s--obd8mq-k--/c_limit,g_center,h_2005,w_1336/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/0ed727b2893d4c19408068a82204bbbc/Alyx.jpg');
+    background-image:url('General_Images/Index_Backpack.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -166,7 +152,7 @@
     background:#c16e69;
 }
 #labor td.sketches:hover {
-    background-image:url('https://i.imgur.com/K9iIY5y.jpg');
+    background-image:url('General_Images/Index_Sketches.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
