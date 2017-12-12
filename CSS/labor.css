@@ -1,18 +1,5 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LABOR TABLE */
 
-@media only screen and (max-width: 640px)  {
-#labor table, #labor td, #labor tbody, #labor td{
-    display: block;
-    width:100% !important;
-    height:100px;
-    clear:both;
-    vertical-align: center !important;
-}
-#labor td {
-    margin-bottom:15px;
-    padding:10%;
-}   
-}
 #labor {
     color:#fff;
     font-family: 'Karla', sans-serif;
