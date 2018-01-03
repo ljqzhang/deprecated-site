@@ -192,6 +192,7 @@ input[type=checkbox]:checked ~ .contact a:hover {
     width:80%;
     margin:10%;
 }
+	#backarrow{display:none;}	
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
