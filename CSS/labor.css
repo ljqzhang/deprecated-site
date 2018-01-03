@@ -1,4 +1,35 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LABOR TABLE */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;=
+}
+
+/*  COLUMN SETUP  */
+.col {
+	float:left;
+	margin: 1% 0 1% 1.6%;  
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; height: 26vw; }
+.span_2_of_3 { width: 66.13%; height: 26vw; }
+.span_1_of_3 { width: 32.26%; height: 26vw; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; height:250px; }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONT CSS */
 
 #labor {
     color:#fff;
@@ -6,27 +37,34 @@
     font-size: 125%;
     line-height:140%;
     font-weight:800;
-    vertical-align:center;
+    vertical-align:middle; !important;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.125);
 }
-#labor td a{
-    color:#fff;
-}
-#labor td{
-    border:none;
-    height:325px;
-    width:30%;
-    border-spacing:5%;
-}
-#labor td.rumble a, #labor td.catnip a, #labor td.kinbaku a, #labor td.experientialretail a, #labor td.tabi a, #labor td.popeye a, #labor td.cloutgoggles a, #labor td.backpack a, #labor td.motocross a, #labor td.sketches a{
-  display:block;
+#labor a{
+    color:#fff; !important
     width:100%;
     height:auto;
 }
-#labor td.rumble{
-  background:#c16e69;
+.va { 
+  position: absolute; 
+    left:25%;
+    top:25%;
+    width:50%;
+    height:50%;
+  display: table; 
 }
-#labor td.rumble:hover{
+.va p {
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center; 
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GRID BOX CSS */
+#rumble, #tabi, #sketches{
+    background:#c16e69;
+    position:relative;
+}
+#rumble:hover{
     background-image:url("https://www.leslie-zhang.com/General_Images/Index_Rumble.jpg");
     background-size: cover;
     background-position:center;
@@ -37,10 +75,13 @@
     -o-transition: .5s ease-out;
     background-blend-mode:soft-light;
 }
-#labor td.catnip{
+
+#catnip, #popeye, #cloutgoggles{
   background:#e5c169;
+    position:relative;
 }
-#labor td.catnip:hover{
+
+#catnip:hover{
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_Catnip.jpg');
     background-size: cover;
     background-position:center;
@@ -51,10 +92,12 @@
     -o-transition: .5s ease-out;
     background-blend-mode: soft-light;
 }
-#labor td.kinbaku {
+
+#kinbaku, #experientialretail, #backpack {
     background:#2f5e7c;
+    position:relative;
 }
-#labor td.kinbaku:hover {
+#kinbaku:hover {
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_Kinbaku.jpg');
     background-size: cover;
     background-position:center;
@@ -65,10 +108,8 @@
     -o-transition: .5s ease-out;
     background-blend-mode:soft-light;
 }
-#labor td.experientialretail {
-    background:#2f5e7c;
-}
-#labor td.experientialretail:hover {
+
+#experientialretail:hover {
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_ExperientialRetail.jpg');
     background-size: cover;
     background-position:center;
@@ -79,10 +120,8 @@
     -o-transition: .5s ease-out;
     background-blend-mode:soft-light;
 }
-#labor td.tabi {
-    background:#c16e69;
-}
-#labor td.tabi:hover {
+
+#tabi:hover {
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_Tabi.jpg');
     background-size: cover;
     background-position:center;
@@ -93,10 +132,8 @@
     -o-transition: .5s ease-out;
     background-blend-mode:soft-light;
 }
-#labor td.popeye {
-    background:#e5c169;
-}
-#labor td.popeye:hover {
+
+#popeye:hover {
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_Popeye.jpg');
     background-size: cover;
     background-position:center;
@@ -107,10 +144,8 @@
     -o-transition: .5s ease-out;
     background-blend-mode:soft-light;
 }
-#labor td.cloutgoggles {
-    background:#e5c169;
-}
-#labor td.cloutgoggles:hover {
+
+#cloutgoggles:hover {
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_CloutGoggles.jpg');
     background-size: cover;
     background-position:center;
@@ -121,10 +156,8 @@
     -o-transition: .5s ease-out;
     background-blend-mode:soft-light;
 }
-#labor td.backpack {
-  background:#2f5e7c;
-}
-#labor td.backpack:hover {
+
+#backpack:hover {
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_Backpack.jpg');
     background-size: cover;
     background-position:center;
@@ -135,11 +168,49 @@
     -o-transition: .5s ease-out;
     background-blend-mode:soft-light;
 }
-#labor td.sketches {
-    background:#c16e69;
-}
-#labor td.sketches:hover {
+
+#sketches:hover {
     background-image:url('https://www.leslie-zhang.com/General_Images/Index_Sketches.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:soft-light;
+}
+
+#ontape:hover {
+    background-image:url('https://i.imgur.com/yG4R0pb.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:soft-light;
+}
+
+#traintracker:hover {
+    background-image:url('https://i.imgur.com/G5RDCMN.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    background-blend-mode:soft-light;
+}
+
+#fieri, #ontape, #traintracker{
+    background:#333;
+    position:relative;
+}
+#fieri:hover{
+    background-image:url('https://cdn.vox-cdn.com/thumbor/Vw-DB1C1jczr1_TuJoJsFwNMk8Y=/0x0:500x375/1400x1050/filters:focal(0x0:500x375):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/39100870/12012_guy_fieri_times_Square1-thumb_20_281_29.0.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
