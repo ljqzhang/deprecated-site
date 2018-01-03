@@ -2,55 +2,97 @@
 <html>
 <head>
     <title>Design / Leslie Zhang</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/labor.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/labor.css" />
     <link href="https://fonts.googleapis.com/css?family=Karla|Work+Sans" rel="stylesheet">
-    <link rel="shortcut icon" href="General_Images/Favicon_2.ico">
+    <script type="text/javascript" src="Script/wz_tooltip.js"></script>
 </head>
 <body>
 
-<div class="topnav">
+<div class="topnav" id="myTopnav">
     <label class="hvr-underline-from-left"><a href="index.html">Leslie Zhang</a></label> &nbsp; &nbsp; &nbsp; <h4 style="display:inline">Writer & Designer</h4>
-            <input type="checkbox" id="toggle-1">
-            <div class="contact">
-                ✉ &nbsp; ljqzhang@gmail.com<br>
-                ☎ &nbsp; 510.759.1092<br>
-                <a href="https://www.instagram.com/loveonthelefteye/">Instagram</a> / <a href="https://twitter.com/ljqzhang">Twitter</a> / <a href="https://www.linkedin.com/in/leslie-zhang-90b5a010a/">LinkedIn</a>
-            </div>
+                <input type="checkbox" id="toggle-1">
         
-            <li><a href="index.html" class="hvr-underline-from-left">Labor</a></li>
-            <li><a href="LeslieZhang_Resume.pdf" target="_blank" class="hvr-underline-from-left">Résumé</a></li>
-            <li><a href="#" class="hvr-underline-from-left"><label for="toggle-1">Contact</label></a>
-            <input type="checkbox" id="toggle-1">
-            <div class="contact">
-                ✉ &nbsp; ljqzhang@gmail.com<br>
-                ☎ &nbsp; 510.759.1092<br>
-                <a href="https://www.instagram.com/loveonthelefteye/">Instagram</a> / <a href="https://twitter.com/ljqzhang">Twitter</a> / <a href="https://www.linkedin.com/in/leslie-zhang-90b5a010a/">LinkedIn</a>
-            </div></li>
-            <li><a href="about.html" class="hvr-underline-from-left">About</a></li>
+            <a href="index.html" class="hvr-underline-from-left">Labor</a>
+            <a href="LeslieZhang_Resume_20171104.pdf" target="_blank" class="hvr-underline-from-left">Résumé</a>
+            <a href="about.html" class="hvr-underline-from-left">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-   
+    
+    
         <div id="backarrow"><a href="index.html">⇜</a></div>
     
-    
     <div class="bodycontainer">
-                    <h1>Design Projects</h1>
+                    <h1>Design</h1>    
         
-        <table id="labor" style="width: 80%; text-align: center; border-spacing:15px;" align="center">
-<tbody>
-<tr>
-<td class="rumble"><a href="rumble.html">Hope for the hungry,<br>hopeless college kid<br><h4>UI Design</h4></a></td>
-    <td class="catnip"><a href="catnip.html">Organizing your schedule <br>based on priority</a><br><h4>UI Design</h4></td>
-    <td class="kinbaku"><a href="kinbaku.html">Bondage-inspired <br>skate shoes</a><br><h4>Product Design</h4></td>
-</tr>
-<tr>
-    <td class="backpack"><a href="backpack.html">A backpack for both <br>camping and the city</a><br><h4>Product Design</h4></td>
-    <td class="sketches"><a href="sketches.html">Sketches</a><br><h4>Illustration</h4></td>
-    <td style="background-color:#000;"><a href="https://www.youtube.com/watch?v=fdlPLFbiTbQ" target="_blank">More! More! More!</a><br><h4>Coming soon</h4></td>
-</tr>
-</tbody>
-</table>
-<br><br><br><br><br><br><br><br><br>
-    </div>
+                <div class="grid" id="labor">
+                    
+<div class="section group" style="text-align: center;">
+    
+	<div class="col span_1_of_3" id="rumble">
+        <div class="va">
+          <p>
+              <a href="rumble.html" >Hope for the hungry, hopeless college kid<br><br><span class="tag">UI Design</span></a>
+            </p></div>
+	</div>
+    
+    <div class="col span_1_of_3" id="catnip">
+        <div class="va">
+        <p>
+            <a href="catnip.html">Organizing your schedule based on priority<br><br><span class="tag">UI Design</span></a>
+            </p></div>
+	</div>
+    
+    
+	<div class="col span_1_of_3" id="kinbaku">
+	<div class="va">
+        <p>
+            <a href="kinbaku.html">Bondage-inspired<br>skate shoes<br><br><span class="tag">Industrial Design</span></a>
+        </p></div>
+    </div></div>          
+            
+            
+            <div class="section group" style="text-align: center;">
+    
+    <div class="col span_1_of_3" id="backpack">
+        <div class="va">
+        <p>
+            <a href="backpack.html">A backpack for both camping and the city<br><br><span class="tag">Industrial Design</span></a>
+            </p></div>
+	</div>
+    
+            	<div class="col span_1_of_3" id="traintracker">
+	<div class="va">
+        <p><a href='#' onmouseover="Tip('In Progress')" onmouseout="UnTip()">
+            Peace of mind for the Chicago commuter<br><br><span class="tag">UI Design</span>
+            </a></p></div>
+	</div>
+            
+    <div class="col span_1_of_3" id="ontape">
+        <div class="va">
+        <p onmouseover="Tip('In Progress')" onmouseout="UnTip()">
+            How documentary forms shape the ways we view ourselves and each other<br><br><span class="tag">Web UX Design</span>
+            </p></div>
+	</div>
+    
+        </div>
+        </div>
+        <br><br><br>
+<div class="footer">
+                        ✉ &nbsp; ljqzhang@gmail.com &nbsp;  &nbsp;  &nbsp; 
+                ☎ &nbsp; 510.759.1092 &nbsp;  &nbsp;  &nbsp; 
+                <a href="https://www.instagram.com/loveonthelefteye/">Instagram</a> / <a href="https://twitter.com/ljqzhang">Twitter</a> / <a href="https://www.linkedin.com/in/leslie-zhang-90b5a010a/">LinkedIn</a></div></div>
+
+    
+        <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
     </body>
     
