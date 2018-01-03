@@ -65,7 +65,7 @@ blockquote{
     text-transform:uppercase;
     color:#fff;
     font-weight:400;
-    font-size:.em;
+    font-size:.75em;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLBAR CSS */
 ::-webkit-scrollbar-track{
@@ -81,19 +81,6 @@ blockquote{
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN BODY STRUCTURE CSS */
-@media only screen and (max-width: 640px)  {
-    
-table, td, tbody, tr{
-    display: block;
-    width:100%;
-    padding:0;
-    clear:both;
-}
-td {
-    position: relative !important;
-    margin-bottom:50px;
-}   
-}
 
 .bodycontainer{
     width:100%;
@@ -102,6 +89,7 @@ td {
 }
 .topnav{
     position:fixed;
+    top:0;
     width:96%;
     z-index: 999;
     font-size:100%;
@@ -113,6 +101,16 @@ td {
 .body{
     width:40%;
     margin: 1% 30% 5% 30%;
+}
+.grid{
+    width:80%;
+    margin-left:10%;
+}
+.footer{
+   width: 96%;
+   background-color: #fff;
+   color: #000;
+   text-align: right;
 }
 input[type=checkbox] {
    position: absolute;
@@ -159,11 +157,13 @@ input[type=checkbox]:checked ~ .contact a {
 input[type=checkbox]:checked ~ .contact a:hover {
     font-weight:600;
 }  
-.topnav li {
-    list-style-type: none;
-    float: right;
+
+.topnav {
+  overflow: hidden;
 }
-.topnav li a {
+
+.topnav a {
+    float:right;
     display: block;
     color: #000;
     text-align: center;
@@ -174,6 +174,45 @@ input[type=checkbox]:checked ~ .contact a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav .icon{
+    display:none;
+}
+@media screen and (max-width: 600px) {
+.bodycontainer{
+    width:100%;
+    padding-top:15%;
+    font-size:.8em;
+}
+.body{
+    width:80%;
+    margin:10%;
+}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
 #backarrow{
     z-index:999;
     position:fixed;
@@ -181,6 +220,12 @@ input[type=checkbox]:checked ~ .contact a:hover {
     padding-left:1%;
     top:50%;
     font-size:5em;
+}
+.footer{
+    bottom:0;
+    padding-bottom:3%;
+    text-align: center;
+    font-size:.75em;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCROLLING IMAGE FILL CSS */
@@ -267,35 +312,4 @@ input[type=checkbox]:checked ~ .contact a:hover {
 
 .box:hover::after {
     opacity: 1;
-}
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT ME IMG HOVERS */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-.tooltip .tooltiptext {
-    opacity: 0;
-    transition: opacity .2s ease-out;
-    -moz-transition: opacity .2s ease-out;
-    -webkit-transition: opacity .2s ease-out;
-    -o-transition: opacity .2s ease-out;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    font-family: 'Web Sans', sans-serif;
-    font-size:.85em;
-    line-height:1.5em;
-}
-.tooltip:hover .tooltiptext {
-    opacity:1;
-    transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
-    -webkit-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
-    top: 80%;
-    left: 32%;
 }
