@@ -9,25 +9,14 @@
     
 <body>
 
-    <div class="topnav">
+<div class="topnav" id="myTopnav">
     <label class="hvr-underline-from-left"><a href="index.html">Leslie Zhang</a></label> &nbsp; &nbsp; &nbsp; <h4 style="display:inline">Writer & Designer</h4>
-            <input type="checkbox" id="toggle-1">
-            <div class="contact">
-                ✉ &nbsp; ljqzhang@gmail.com<br>
-                ☎ &nbsp; 510.759.1092<br>
-                <a href="https://www.instagram.com/loveonthelefteye/">Instagram</a> / <a href="https://twitter.com/ljqzhang">Twitter</a> / <a href="https://www.linkedin.com/in/leslie-zhang-90b5a010a/">LinkedIn</a>
-            </div>
+                <input type="checkbox" id="toggle-1">
         
-            <li><a href="index.html" class="hvr-underline-from-left">Labor</a></li>
-            <li><a href="LeslieZhang_Resume.pdf" target="_blank" class="hvr-underline-from-left">Résumé</a></li>
-            <li><a href="#" class="hvr-underline-from-left"><label for="toggle-1">Contact</label></a>
-            <input type="checkbox" id="toggle-1">
-            <div class="contact">
-                ✉ &nbsp; ljqzhang@gmail.com<br>
-                ☎ &nbsp; 510.759.1092<br>
-                <a href="https://www.instagram.com/loveonthelefteye/">Instagram</a> / <a href="https://twitter.com/ljqzhang">Twitter</a> / <a href="https://www.linkedin.com/in/leslie-zhang-90b5a010a/">LinkedIn</a>
-            </div></li>
-            <li><a href="about.html" class="hvr-underline-from-left">About</a></li>
+            <a href="index.html" class="hvr-underline-from-left">Labor</a>
+            <a href="LeslieZhang_Resume_20171104.pdf" target="_blank" class="hvr-underline-from-left">Résumé</a>
+            <a href="about.html" class="hvr-underline-from-left">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     
     <div class="hvr-hang" id="backarrow"><a href="index.html">⇜</a></div>
@@ -39,7 +28,21 @@
         <img src="Sketches/blah.jpg" width="100%"><br>
         <img src="Sketches/bt4d.jpg" width="100%"><br>
         <img src="Sketches/allusia.jpg" width="100%"><br>
-        <img src="Sketches/stitch shoes.jpg" width="100%"><br></div></div>
-<br><br><br><br><br><br><br>
+        <img src="Sketches/stitch shoes.jpg" width="100%"><br></div><div class="footer">
+                        ✉ &nbsp; ljqzhang@gmail.com &nbsp;  &nbsp;  &nbsp; 
+                ☎ &nbsp; 510.759.1092 &nbsp;  &nbsp;  &nbsp; 
+                <a href="https://www.instagram.com/loveonthelefteye/">Instagram</a> / <a href="https://twitter.com/ljqzhang">Twitter</a> / <a href="https://www.linkedin.com/in/leslie-zhang-90b5a010a/">LinkedIn</a></div></div>
+
+    
+        <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>
